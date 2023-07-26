@@ -7,7 +7,7 @@ public class LauncherPage {
     public LauncherPage(WebDriver webDriver){
         this.webDriver=webDriver;
     }
-    public String navigateTo(String url){
-        return  url;
+    public void navigateTo(String url){
+       webDriver.get(url);
     }
 }

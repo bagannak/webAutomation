@@ -7,16 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage {
-    private List<Item> items;
-    WebDriver webDriver;
-    public HomePage(WebDriver webDriver){
-        items=new ArrayList<>();
-        this.webDriver=webDriver;
+    public HomePage(WebDriver webDriver) {
     }
-    public void search(String searchTerm){
+    public void search(String searchItem) {
+    }
+    public List<Item> getSearchItems() {
+        return new ArrayList<>();
+    }
 
-    }
-    public List<Item> getSearchItems(){
-        return  items;
-    }
 }

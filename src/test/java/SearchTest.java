@@ -13,8 +13,8 @@ public class SearchTest {
     public void verifyIfSearchTermShowsRelevantResults() {
         WebDriver webdriver = new ChromeDriver();
         //Arrange
-        String searchItem = "Jeans";
-        String searchKey="Jeans";
+        String searchItem = "Product";
+        String searchKey="Product";
 //        WebDriver webdriver=null;
         LauncherPage launcherPage = new LauncherPage(webdriver); // Assume webdriver is created and handy
         launcherPage.navigateTo("https://web-playground.ultralesson.com/");
