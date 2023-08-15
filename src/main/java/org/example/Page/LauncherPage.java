@@ -2,15 +2,18 @@ package org.example.Page;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LauncherPage {
+public class LauncherPage extends  BasePage{
     private WebDriver webDriver;
 
+
     public LauncherPage(WebDriver webDriver) {
-        this.webDriver = webDriver;
+        super(webDriver);
+        this.webDriver= new ChromeDriver();
     }
 
 
